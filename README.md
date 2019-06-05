@@ -1,5 +1,5 @@
 pdf2htmlEX in a docker container
-[![](https://badge.imagelayers.io/bwits/pdf2htmlex:latest.svg)](https://imagelayers.io/?images=bwits/pdf2htmlex:latest 'Get your own badge on imagelayers.io')
+
 =================
 
 ## How to use this docker containter to convert pdf file to html
