@@ -1,6 +1,6 @@
 This repo puts pdf2htmlEX into a Docker container.  Forked as it was last updated about 4 years ago and on ran an old version; this should run the most recent version and installs MS's non-free fonts which I needed for my use case.
 
-## How to use this docker containter to convert a PDF file to an HTML File
+## How to use this Docker container to convert a PDF file to an HTML File
 Suppose you have a PDF file ~/pdf/test.pdf, simply running
 
 ```bash
