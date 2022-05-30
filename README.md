@@ -20,3 +20,5 @@ pdf2htmlEX --zoom 1.3 test.pdf
 For more details on how to run `pdf2htmlEX`, please read [the wiki](https://github.com/pdf2htmlEX/pdf2htmlEX).
 
 For the Docker Hub page, see [here](https://cloud.docker.com/u/clementtsang/repository/docker/clementtsang/pdf2htmlex-microsoft-fonts).
+
+A ghcr package can also be found [here](https://github.com/ClementTsang/pdf2htmlEX_docker/pkgs/container/pdf2htmlex-ms-fonts).
