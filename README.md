@@ -1,7 +1,7 @@
-This repo puts pdf2htmlEX into a Docker container.  Forked as it was last updated about 4 years ago and on ran an old version; this should run the most recent version and installs MS's non-free fonts which I needed for my use case.
+This repo puts pdf2htmlEX into a Docker container. This should run the most recent version and installs MS's non-free fonts which I needed for my use case.
 
 ## How to use this Docker container to convert a PDF file to an HTML File
-Suppose you have a PDF file ~/pdf/test.pdf, simply running
+Suppose you have a PDF file `~/pdf/test.pdf`, simply running:
 
 ```bash
 docker run -ti --rm -v ~/pdf:/pdf clementtsang/pdf2htmlex-ms-fonts pdf2htmlEX --zoom 1.3 test.pdf
@@ -17,10 +17,6 @@ pdf2htmlEX -h
 pdf2htmlEX --zoom 1.3 test.pdf
 ```
 
-For more details on how to run `pdf2htmlEX`, please read the wiki:
+For more details on how to run `pdf2htmlEX`, please read [the wiki](https://github.com/pdf2htmlEX/pdf2htmlEX).
 
-<https://github.com/coolwanglu/pdf2htmlEX/wiki/Quick-Start>
-
-For the Docker Hub page, see:
-
-<https://cloud.docker.com/u/clementtsang/repository/docker/clementtsang/pdf2htmlex-microsoft-fonts>
+For the Docker Hub page, see [here](https://cloud.docker.com/u/clementtsang/repository/docker/clementtsang/pdf2htmlex-microsoft-fonts).

@@ -17,7 +17,7 @@ jobs:
       fail-fast: false
       matrix:
         tuple:
-          - { name: "pdf2htmlEX_docker", filePath: "Dockerfile" }
+          - { name: "ClementTsang/pdf2htmlex-ms-fonts", filePath: "Dockerfile" }
     permissions:
       contents: read
       packages: write

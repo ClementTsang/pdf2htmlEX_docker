@@ -1,12 +1,16 @@
-#Dockerfile to build a pdf2htmlEx image
-FROM debian:stretch
+# Dockerfile to build a pdf2htmlEx image
+FROM ubuntu:18.04
 
-# update debian source list
-RUN echo "deb http://ftp.de.debian.org/debian sid main non-free contrib" >> /etc/apt/sources.list 
-RUN apt-get -qqy update 
-RUN apt-get -qqy install ttf-mscorefonts-installer
-RUN apt-get -qqy install pdf2htmlex && \
-    rm -rf /var/lib/apt/lists/*
+RUN apt -qy update
+RUN apt -qy install software-properties-common
+
+RUN add-apt-repository multiverse
+RUN apt -qy update 
+RUN apt -qy install ttf-mscorefonts-installer
+RUN apt -qy install wget
+RUN wget -q 'https://github.com/pdf2htmlEX/pdf2htmlEX/releases/download/v0.18.8.rc1/pdf2htmlEX-0.18.8.rc1-master-20200630-Ubuntu-focal-x86_64.deb' -O 'pdf2htmlex.deb'
+RUN apt -qy install './pdf2htmlex.deb'
+RUN rm -rf /var/lib/apt/lists/*
 
 VOLUME /pdf
 WORKDIR /pdf
